@@ -1,0 +1,333 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--
+    /*
+     *	This content is generated from the API File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc
+     *	@file 		tela_inicial___novo_
+     *	@date 		Tuesday 09th of May 2023 10:30:59 PM
+     *	@title 		Page 1
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.3.figma
+     *
+     */
+    -->
+    <ScrollView
+        android:id="@+id/tela_inicial___novo_"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/page_tela_inicial___novo__ek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp">
+
+                <View
+                    android:id="@+id/_bg__tela_inicial___novo__ek2"
+                    android:layout_width="429dp"
+                    android:layout_height="914dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/_bg__tela_inicial___novo__ek2_shape" />
+
+
+                <RelativeLayout
+                    android:id="@+id/entrar_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="550dp">
+
+                    <View
+                        android:id="@+id/rectangle_2"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_shape" />
+
+                    <TextView
+                        android:id="@+id/entrar"
+                        android:layout_width="92dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="Inter"
+                        android:text="@string/entrar_string"
+                        android:textColor="@color/_bg__tela_inicial___novo__ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/esqueci_minha_senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="480dp">
+
+                    <TextView
+                        android:id="@+id/esqueci_minha_senha_ek1"
+                        android:layout_width="175.5dp"
+                        android:layout_height="28.5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="Inter"
+                        android:text="@string/esqueci_minha_senha_ek1_string"
+                        android:textColor="@color/esqueci_minha_senha_ek1_color"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/cadastre_se"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="650dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/cadastre_usuario"
+                            android:layout_width="183dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="Inter"
+                            android:text="Cadastre-se"
+                            android:textColor="@color/rectangle_2_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/screenshot_238_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="screenshot_238_1"
+                        android:src="@drawable/screenshot_238_1" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/container_fiscal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="730dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/cadastro_fiscal"
+                            android:layout_width="183dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="Inter"
+                            android:text="Cadastre-se Fiscal"
+                            android:textColor="@color/rectangle_2_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/screenshot_238_2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="screenshot_238_2"
+                        android:src="@drawable/screenshot_238_1" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/den_ncias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="800dp">
+
+                    <TextView
+                        android:id="@+id/den_ncias_ek1"
+                        android:layout_width="170dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="Inter"
+                        android:text="Denuncias"
+                        android:textColor="@color/rectangle_2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/screenshot_239_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="screenshot_239_1"
+                        android:src="@drawable/screenshot_239_1" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/senha_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="375dp"
+                    android:text="Senha"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/digite_senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="410dp">
+
+                    <View
+                        android:id="@+id/senha_container"
+                        android:layout_width="330dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_ek1_shape" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="255dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="58dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="Inter"
+                        android:text=""
+                        android:inputType="textPassword"
+                        android:textColor="@color/_bg__tela_inicial___novo__ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/screenshot_241_1"
+                        android:layout_width="17dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="31dp"
+                        android:layout_marginTop="11dp"
+                        android:contentDescription="screenshot_241_1"
+                        android:src="@drawable/screenshot_241_1" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="265dp"
+                    android:text="Usuario"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/digite_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="300dp">
+
+
+                    <View
+                        android:id="@+id/login_container"
+                        android:layout_width="330dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_ek2_shape" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="255dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="Inter"
+                        android:text=""
+                        android:textColor="@color/_bg__tela_inicial___novo__ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/screenshot_242_1"
+                        android:layout_width="23dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="25.18dp"
+                        android:layout_marginTop="13dp"
+                        android:contentDescription="screenshot_242_1"
+                        android:src="@drawable/screenshot_242_1" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <ImageView
+                        android:id="@+id/cabe_alho_2"
+                        android:layout_width="428dp"
+                        android:layout_height="199dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="cabe_alho_2"
+                        android:src="@drawable/cabe_alho_2" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>

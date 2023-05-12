@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- tela_inicial___novo_ strings -->
+
+    <string name="app_name">Page 1</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="time_ek1_string">9:27</string>
+    <string name="entrar_string">Entrar</string>
+    <string name="esqueci_minha_senha_ek1_string">Esqueci minha senha</string>
+    <string name="cadastre_se_ek1_string">CADASTRE-SE</string>
+    <string name="den_ncias_ek1_string">DENNCIAS</string>
+    <string name="digite_sua_senha_aqui_string">Digite sua senha aqui</string>
+    <string name="digite_seu_login_aqui_string">Digite seu login aqui</string>
+    <string name="voltar_string">Voltar</string>
+    <string name="dados_cadastrais_string">DADOS CADASTRAIS</string>
+    <string name="cadastro_fiscal">CADASTRO FISCAL</string>
+    <string name="nome_string">Nome</string>
+    <string name="id_do_usu_rio_string">ID do usurio</string>
+    <string name="email_string">Email</string>
+    <string name="visualizar_string">VISUALIZAR</string>
+    <string name="visitas_realizadas_string">VISITAS REALIZADAS</string>
+    <string name="_00_ek1_string">00</string>
+    <string name="visualizar_ek1_string">VISUALIZAR</string>
+    <string name="nome_da_empresa_string">Nome da Empresa</string>
+    <string name="endere_o_string">Endereo</string>
+    <string name="data_string">Data</string>
+    <string name="___string">/</string>
+    <string name="hora_string">Hora</string>
+    <string name="nome_do_fiscal_string">Nome do fiscal</string>
+    <string name="empresa_do_fiscal_string">Empresa do fiscal</string>
+    <string name="id_do_fiscal__0000000___0_string">ID do fiscal: 0000000 - 0</string>
+    <string name="logout_string">Logout</string>
+    <string name="visitas_agendadas_string">VISITAS AGENDADAS</string>
+    <string name="_00_string">00</string>
+</resources>

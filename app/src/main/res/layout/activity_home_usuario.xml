@@ -1,0 +1,285 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--
+    /*
+     *	This content is generated from the API File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc
+     *	@file 		perfil_usu_rio___novo
+     *	@date 		Tuesday 09th of May 2023 11:12:29 PM
+     *	@title 		Page 2
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.3.figma
+     *
+     */
+    -->
+    <ScrollView
+        android:id="@+id/perfil_usu_rio___novo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/page_perfil_usu_rio___novo_ek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp">
+
+                <View
+                    android:id="@+id/_bg__perfil_usu_rio___novo_ek2"
+                    android:layout_width="429dp"
+                    android:layout_height="914dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/_bg__perfil_usu_rio___novo_ek2_shape" />
+
+
+                <RelativeLayout
+                    android:id="@+id/perfil_usuario_painel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_2"
+                            android:layout_width="429dp"
+                            android:layout_height="213dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_shape" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/rectangle_12"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginStart="162dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/rectangle_12_shape" />
+
+                    <TextView
+                        android:id="@+id/nome_do_usuario"
+                        android:layout_width="198dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="128dp"
+                        android:layout_marginTop="121dp"
+                        android:fontFamily="Inter"
+                        android:text="Nome do usuario"
+                        android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/screenshot_237_1"
+                        android:layout_width="70dp"
+                        android:layout_height="77dp"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="screenshot_237_1"
+                        android:src="@drawable/screenshot_237_1" />
+
+                    <TextView
+                        android:id="@+id/logout"
+                        android:layout_width="75.5dp"
+                        android:layout_height="31.5dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="Inter"
+                        android:text="Logout"
+                        android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/email_do_usu_rio"
+                        android:layout_width="193dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="131dp"
+                        android:layout_marginTop="146dp"
+                        android:fontFamily="Inter"
+                        android:text="Email do usuario"
+                        android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/qr_code_perfil_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="250dp">
+
+                    <ImageView
+                        android:id="@+id/screenshot_248_1"
+                        android:layout_width="297dp"
+                        android:layout_height="298dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:contentDescription="screenshot_248_1"
+                        android:src="@drawable/screenshot_248_1" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/dados_cadastrais_perfil_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="633dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_3_ek1"
+                            android:layout_width="169dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_3_ek1_shape" />
+
+                        <TextView
+                            android:id="@+id/dados_cadastrais"
+                            android:layout_width="165dp"
+                            android:layout_height="39.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="Inter"
+                            android:gravity="center"
+                            android:text="Dados cadastrais"
+                            android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/cancelar_perfil_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="131dp"
+                    android:layout_marginTop="700dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_2_ek1"
+                            android:layout_width="168.16dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek1_shape" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/cancelar"
+                        android:layout_width="155dp"
+                        android:layout_height="47dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="Cancelar"
+                        android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/denuncia_perfil_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="231dp"
+                    android:layout_marginTop="633dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_4_ek1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_2_ek2"
+                            android:layout_width="168.16dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek2_shape" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/den_ncia"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="Denuncia"
+                        android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/screenshot_246_2"
+                        android:layout_width="29dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="11dp"
+                        android:contentDescription="screenshot_246_2"
+                        android:src="@drawable/screenshot_246_2" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>
