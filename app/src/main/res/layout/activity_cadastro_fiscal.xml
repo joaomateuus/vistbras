@@ -45,7 +45,7 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/enviar_dados_cadastrais"
+                    android:id="@+id/submit_dados_cadastrais"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="138dp"
@@ -60,7 +60,7 @@
                         android:background="@drawable/rectangle_2_shape" />
 
                     <TextView
-                        android:id="@+id/voltar"
+                        android:id="@+id/btn_submit"
                         android:layout_width="141dp"
                         android:layout_height="56dp"
                         android:layout_gravity="center_horizontal|center"
@@ -161,10 +161,10 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/empresa"
+                            android:id="@+id/empresa_input"
                             android:layout_width="285dp"
                             android:layout_height="48dp"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginLeft="55dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
@@ -210,10 +210,10 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/codigo_fiscal"
+                            android:id="@+id/codfiscal_input"
                             android:layout_width="285dp"
                             android:layout_height="48dp"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginLeft="55dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
@@ -227,7 +227,7 @@
 
 
                 <TextView
-                    android:id="@+id/label"
+                    android:id="@+id/label_nome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
@@ -260,10 +260,10 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/nome"
+                            android:id="@+id/nome_input"
                             android:layout_width="285dp"
                             android:layout_height="45dp"
-                            android:layout_marginLeft="48dp"
+                            android:layout_marginLeft="55dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
@@ -286,7 +286,7 @@
 
 
                 <TextView
-                    android:id="@+id/label_iduser"
+                    android:id="@+id/label_usuario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
@@ -332,10 +332,10 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/usuario"
+                            android:id="@+id/usuario_input"
                             android:layout_width="285dp"
                             android:layout_height="48dp"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginLeft="55dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
@@ -390,10 +390,10 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/email"
+                            android:id="@+id/email_input"
                             android:layout_width="285dp"
                             android:layout_height="48dp"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginLeft="55dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
@@ -447,6 +447,18 @@
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
+                        <EditText
+                            android:id="@+id/cpf_input"
+                            android:layout_width="285dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="Inter"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
                     </RelativeLayout>
 
                 </RelativeLayout>
@@ -485,10 +497,10 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/telefone"
+                            android:id="@+id/telefone_input"
                             android:layout_width="285dp"
                             android:layout_height="48dp"
-                            android:layout_marginLeft="40dp"
+                            android:layout_marginLeft="55dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
@@ -527,10 +539,10 @@
                         android:background="@drawable/rectangle_2_ek2_shape" />
 
                     <EditText
-                        android:id="@+id/password"
+                        android:id="@+id/password_input"
                         android:layout_width="285dp"
                         android:layout_height="48dp"
-                        android:layout_marginLeft="40dp"
+                        android:layout_marginLeft="55dp"
                         android:layout_marginTop="0dp"
                         android:fontFamily="Inter"
                         android:inputType="textPassword"
@@ -576,10 +588,10 @@
                         android:background="@drawable/rectangle_2_ek2_shape" />
 
                     <EditText
-                        android:id="@+id/password_confirm"
+                        android:id="@+id/passwordconfirm_input"
                         android:layout_width="285dp"
                         android:layout_height="48dp"
-                        android:layout_marginLeft="40dp"
+                        android:layout_marginLeft="55dp"
                         android:layout_marginTop="0dp"
                         android:fontFamily="Inter"
                         android:inputType="textPassword"

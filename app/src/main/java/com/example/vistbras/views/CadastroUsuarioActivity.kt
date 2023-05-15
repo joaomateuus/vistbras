@@ -62,7 +62,7 @@ class CadastroUsuarioActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(
                     this,
-                    "Erro ao salvar usario. Tente novamente.",
+                    "Erro ao criar usario. Tente novamente.",
                     Toast.LENGTH_LONG
                 ).show()
             }
