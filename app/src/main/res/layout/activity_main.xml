@@ -52,7 +52,7 @@
                     android:layout_marginTop="550dp">
 
                     <View
-                        android:id="@+id/rectangle_2"
+                        android:id="@+id/btn_submit"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="0dp"
@@ -234,14 +234,14 @@
                         android:background="@drawable/rectangle_2_ek1_shape" />
 
                     <EditText
-                        android:id="@+id/password"
+                        android:id="@+id/password_input"
                         android:layout_width="255dp"
                         android:layout_height="45dp"
                         android:layout_marginLeft="58dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="Inter"
-                        android:text=""
                         android:inputType="textPassword"
+                        android:text=""
                         android:textColor="@color/_bg__tela_inicial___novo__ek2_color"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -284,7 +284,7 @@
                         android:background="@drawable/rectangle_2_ek2_shape" />
 
                     <EditText
-                        android:id="@+id/username"
+                        android:id="@+id/username_input"
                         android:layout_width="255dp"
                         android:layout_height="45dp"
                         android:layout_marginLeft="70dp"

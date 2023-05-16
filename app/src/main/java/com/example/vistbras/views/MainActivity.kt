@@ -3,61 +3,83 @@ package com.example.vistbras.views
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.EditText
-import android.widget.RelativeLayout
-import android.widget.TextView
+import android.widget.Toast
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.example.vistbras.R
+import com.example.vistbras.models.LoginRequest
+import com.example.vistbras.models.UserSession
+import com.example.vistbras.repositories.UserRepository
+import com.example.vistbras.rest.RetrofitService
+import com.example.vistbras.store.LoggedUserSession
+import com.example.vistbras.viewmodel.login.MainActivityViewModel
+import com.example.vistbras.viewmodel.login.MainActivityViewModelFactory
 
 
 class MainActivity : AppCompatActivity() {
-//    private lateinit var binding: ActivityMainBinding
+    private lateinit var viewModel: MainActivityViewModel
+    private val retrofitService = RetrofitService.getInstance()
+
+    private lateinit var usuarioInput: EditText
+    private lateinit var passwordInput: EditText
+    private lateinit var submitButton: View
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        binding = ActivityMainBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
+        usuarioInput = findViewById(R.id.username_input)
+        passwordInput = findViewById(R.id.password_input)
+        submitButton = findViewById(R.id.btn_submit)
+
+
+        viewModel = ViewModelProvider(
+            this, MainActivityViewModelFactory(UserRepository(retrofitService))
+        ).get(
+            MainActivityViewModel::class.java
+        )
+
+        handleFormSubmit()
     }
 
     override fun onStart() {
         super.onStart()
 
-        val layoutLogin = findViewById<View>(R.id.login_container)
-        val layoutSenha = findViewById<View>(R.id.senha_container)
+        viewModel.sucessLogin.observe(this, Observer {
+            UserSession.setToken(it.access)
+            viewModel.getLoggedUser(it.access)
+        })
 
-        val username = findViewById<EditText>(R.id.username)
-        val password = findViewById<EditText>(R.id.password)
+        viewModel.statusFetchUser.observe(this, Observer {
+            val user = LoggedUserSession.getUser()
 
-        val cadastreUsuario = findViewById<TextView>(R.id.cadastre_usuario)
-        val cadastreFiscal = findViewById<TextView>(R.id.cadastro_fiscal)
-        val botaoEntrar = findViewById<RelativeLayout>(R.id.entrar_)
+            if (user != null) {
+                if (user.is_fiscal) {
+                    startActivity(Intent(this, HomeFiscalActivity::class.java))
+                } else {
+                    startActivity(Intent(this, HomeUsuarioActivity::class.java))
+                }
+            } else {
+                Toast.makeText(
+                    this,
+                    "Erro ao fazer login. Tente novamente.",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        })
 
+    }
 
-        cadastreUsuario.setOnClickListener {
-            startActivity(Intent(this, CadastroUsuarioActivity::class.java))
-        }
-
-        cadastreFiscal.setOnClickListener {
-            startActivity(Intent(this, CadastroFiscalActivity::class.java))
-        }
-
-        botaoEntrar.setOnClickListener {
-            Log.i("botao", "Entrei no botao de entrada")
-            Log.i("botao", username.text.toString())
-            Log.i("botao", password.text.toString())
-            startActivity(Intent(this, HomeFiscalActivity::class.java))
-
-        }
-
-
-        username.setOnClickListener {
-            username.getText().clear()
-        }
-
-        password.setOnClickListener {
-            password.getText().clear()
+    private fun handleFormSubmit() {
+        submitButton.setOnClickListener {
+            viewModel.loginUser(
+                LoginRequest(
+                    usuarioInput.text.toString(),
+                    passwordInput.text.toString()
+                )
+            )
         }
     }
 }
