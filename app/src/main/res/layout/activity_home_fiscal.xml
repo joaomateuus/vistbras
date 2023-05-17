@@ -49,7 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
-                    android:layout_marginTop="267dp">
+                    android:layout_marginTop="470dp">
 
                     <View
                         android:id="@+id/rectangle_3"
@@ -82,19 +82,6 @@
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
                         android:textSize="25sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/visualizar"
-                        android:layout_width="150dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="91dp"
-                        android:fontFamily="Inter"
-                        android:text="@string/visualizar_string"
-                        android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
                 </RelativeLayout>
 
 
@@ -103,14 +90,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="226dp"
-                    android:layout_marginTop="267dp">
+                    android:layout_marginTop="450dp">
 
                     <View
                         android:id="@+id/rectangle_3_ek1"
                         android:layout_width="176dp"
                         android:layout_height="138dp"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginTop="20dp"
                         android:background="@drawable/rectangle_3_ek1_shape" />
 
                     <TextView
@@ -118,7 +105,7 @@
                         android:layout_width="177.5dp"
                         android:layout_height="29.5dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="21dp"
+                        android:layout_marginTop="40dp"
                         android:fontFamily="Inter"
                         android:text="@string/visitas_realizadas_string"
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
@@ -129,183 +116,94 @@
                         android:id="@+id/_00_ek1"
                         android:layout_width="73.5dp"
                         android:layout_height="40.5dp"
-                        android:layout_marginLeft="71dp"
-                        android:layout_marginTop="48dp"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginTop="65dp"
                         android:fontFamily="Inter"
                         android:text="@string/_00_ek1_string"
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
                         android:textSize="25sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/visualizar_ek1"
-                        android:layout_width="150dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="91dp"
-                        android:fontFamily="Inter"
-                        android:text="@string/visualizar_ek1_string"
-                        android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
                 </RelativeLayout>
 
 
                 <RelativeLayout
-                    android:id="@+id/campo_de_vistorias_perfil_fiscal"
+                    android:id="@+id/_realizadas_perfil_fiscal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="430dp">
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="70dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek2"
-                        android:layout_width="368dp"
-                        android:layout_height="414dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek2_shape" />
+                        android:id="@+id/rectangle_4"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="200dp"
+                        android:background="@drawable/rectangle_3_shape" />
+
+                    <TextView
+                        android:id="@+id/visua1"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="220dp"
+                        android:fontFamily="Inter"
+                        android:text="Extintores"
+                        android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <View
-                        android:id="@+id/rectangle_20"
-                        android:layout_width="355dp"
-                        android:layout_height="392dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="11dp"
-                        android:background="@drawable/rectangle_20_shape" />
-
-                    <View
-                        android:id="@+id/line_4"
-                        android:layout_width="345dp"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="60dp"
-                        android:background="@drawable/line_4_shape" />
+                        android:id="@+id/rectangle_5"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="300dp"
+                        android:background="@drawable/rectangle_3_shape" />
 
                     <TextView
-                        android:id="@+id/nome_da_empresa"
-                        android:layout_width="152.5dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="35dp"
-                        android:layout_marginTop="27dp"
+                        android:id="@+id/visud1"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="320dp"
                         android:fontFamily="Inter"
-                        android:text="@string/nome_da_empresa_string"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
+                        android:text="Vistorias"
+                        android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/data"
-                        android:layout_width="63.5dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="260dp"
-                        android:layout_marginTop="30dp"
-                        android:fontFamily="Inter"
-                        android:text="@string/data_string"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/dado_umempresa"
-                        android:layout_width="200dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="70dp"
-                        android:fontFamily="Inter"
-                        android:text="Bemol"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dado_um"
-                        android:layout_width="100dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="255dp"
-                        android:layout_marginTop="70dp"
-                        android:fontFamily="Inter"
-                        android:text="18/02/2023"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dado_doisempresa"
-                        android:layout_width="200dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="115dp"
-                        android:fontFamily="Inter"
-                        android:text="Bemol Manauara"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dado_dois"
-                        android:layout_width="100dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="255dp"
-                        android:layout_marginTop="115dp"
-                        android:fontFamily="Inter"
-                        android:text="18/02/2023"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dado_tresempresa"
-                        android:layout_width="200dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="155dp"
-                        android:fontFamily="Inter"
-                        android:text="Bemol Djlama"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dado_tres"
-                        android:layout_width="100dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="255dp"
-                        android:layout_marginTop="155dp"
-                        android:fontFamily="Inter"
-                        android:text="18/02/2023"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dado_quatroempresa"
-                        android:layout_width="200dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="195dp"
-                        android:fontFamily="Inter"
-                        android:text="Bemol Aleixo"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/dado_quatro"
-                        android:layout_width="100dp"
-                        android:layout_height="28.5dp"
-                        android:layout_marginLeft="255dp"
-                        android:layout_marginTop="195dp"
-                        android:fontFamily="Inter"
-                        android:text="18/02/2023"
-                        android:textColor="@color/line_4_color"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-
                 </RelativeLayout>
+
+                <TableLayout
+                    android:id="@+id/table_vistoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="650dp"
+                    android:background="@drawable/border_shape"
+                    android:divider="?android:attr/dividerHorizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:showDividers="middle"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/rectangle_3_ek1_shape"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Empresa"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Data"
+                            android:textColor="#FFFFFF" />
+                    </TableRow>
+                </TableLayout>
 
 
                 <RelativeLayout
@@ -326,7 +224,7 @@
                         <View
                             android:id="@+id/rectangle_2"
                             android:layout_width="429dp"
-                            android:layout_height="213dp"
+                            android:layout_height="253dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rectangle_2_shape" />
@@ -342,7 +240,7 @@
                         android:background="@drawable/rectangle_12_shape" />
 
                     <TextView
-                        android:id="@+id/nome_do_fiscal"
+                        android:id="@+id/nome_fiscal"
                         android:layout_width="171dp"
                         android:layout_height="39dp"
                         android:layout_marginLeft="142dp"
@@ -354,11 +252,11 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/empresa_do_fiscal"
+                        android:id="@+id/empresa_fiscal"
                         android:layout_width="205dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="125dp"
-                        android:layout_marginTop="146dp"
+                        android:layout_marginTop="186dp"
                         android:fontFamily="Inter"
                         android:text="@string/empresa_do_fiscal_string"
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
@@ -367,19 +265,19 @@
 
                     <ImageView
                         android:id="@+id/screenshot_237_1"
-                        android:layout_width="70dp"
-                        android:layout_height="77dp"
+                        android:layout_width="65dp"
+                        android:layout_height="70dp"
                         android:layout_marginStart="180dp"
                         android:layout_marginTop="30dp"
                         android:contentDescription="screenshot_237_1"
                         android:src="@drawable/screenshot_237_1" />
 
                     <TextView
-                        android:id="@+id/id_do_fiscal__0000000___0"
+                        android:id="@+id/cod_fiscal"
                         android:layout_width="275dp"
                         android:layout_height="53dp"
-                        android:layout_marginLeft="115dp"
-                        android:layout_marginTop="172dp"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginTop="215dp"
                         android:fontFamily="Inter"
                         android:text="Codigo do fiscal"
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"

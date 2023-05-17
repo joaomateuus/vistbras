@@ -1,9 +1,11 @@
 package com.example.vistbras.rest
 
+import com.example.vistbras.models.FiscalRequest
 import com.example.vistbras.models.FiscalUser
 import com.example.vistbras.models.LoginRequest
 import com.example.vistbras.models.LoginResponse
 import com.example.vistbras.models.User
+import com.example.vistbras.models.Vistoria
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -13,6 +15,7 @@ import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.POST
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface RetrofitService {
 
@@ -30,6 +33,17 @@ interface RetrofitService {
         @Header("Authorization") authorization: String,
         @Path("id") id: Int
     ): Call<User>
+
+    @GET("api/v1/vistorias/")
+    fun getVistorias(
+        @Header("Authorization") authorization: String
+    ): Call<List<Vistoria>>
+
+    @POST("api/v1/fiscais/get_fiscal_by_user_id/")
+    fun getLoggedFiscal(
+        @Header("Authorization") authorization: String,
+        @Query("user") userId: Int?
+    ): Call<FiscalRequest>
 
     companion object {
         private val retrofitService: RetrofitService by lazy {
