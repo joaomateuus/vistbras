@@ -16,6 +16,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.vistbras.R
 import com.example.vistbras.adapters.EmpresaArrayAdapter
 import com.example.vistbras.models.Empresa
+import com.example.vistbras.models.Extintor
+import com.example.vistbras.models.ExtintorItem
 import com.example.vistbras.models.UserSession
 import com.example.vistbras.repositories.EmpresaRepository
 import com.example.vistbras.repositories.ExtintoresRepository
@@ -37,10 +39,11 @@ class CadastroExtintorActivity : AppCompatActivity() {
     private lateinit var result: TextView
     private lateinit var calendarView: TextView
     private lateinit var codigoInput: EditText
-    private lateinit var nivel: EditText
-    private lateinit var tipo: EditText
-    private lateinit var tamanho: EditText
-    private lateinit var local: EditText
+    private lateinit var nivelInput: EditText
+    private lateinit var tipoInput: EditText
+    private lateinit var tamanhoInput: EditText
+    private lateinit var localInput: EditText
+    private lateinit var btnSubmit: TextView
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,10 +54,11 @@ class CadastroExtintorActivity : AppCompatActivity() {
         result = findViewById(R.id.tv_result)
         calendarView = findViewById(R.id.dt_validade_input)
         codigoInput = findViewById(R.id.codigo_input)
-        nivel = findViewById(R.id.nivel_input)
-        tipo = findViewById(R.id.tipo_input)
-        tamanho = findViewById(R.id.tamanho_input)
-        local = findViewById(R.id.local_input)
+        nivelInput = findViewById(R.id.nivel_input)
+        tipoInput = findViewById(R.id.tipo_input)
+        tamanhoInput = findViewById(R.id.tamanho_input)
+        localInput = findViewById(R.id.local_input)
+        btnSubmit = findViewById(R.id.btn_submit)
 
         viewModel = ViewModelProvider(
             this,
@@ -82,6 +86,22 @@ class CadastroExtintorActivity : AppCompatActivity() {
                 it,
                 Toast.LENGTH_LONG
             ).show()
+        })
+
+        viewModel.statusCreateExtintor.observe(this, Observer {
+            if (it) {
+                Toast.makeText(
+                    this,
+                    "Extintor cadastrado com sucesso",
+                    Toast.LENGTH_LONG
+                ).show()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Erro ao cadastrar extintor. Tente novamente.",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
         })
     }
 
@@ -133,10 +153,28 @@ class CadastroExtintorActivity : AppCompatActivity() {
         }
     }
 
+    private fun handleFormSubmit() {
+        btnSubmit.setOnClickListener {
+            val data = ExtintorItem(
+                empresa = selectedEmpresaId!!,
+                codigo = codigoInput.text.toString(),
+                data_validade = calendarView.text.toString(),
+                local = localInput.text.toString(),
+                nivel = nivelInput.text.toString(),
+                tamanho = tamanhoInput.text.toString(),
+                tipo = tipoInput.text.toString(),
+                termo_garantia = true
+            )
+
+            viewModel.createExtintor(token, data)
+        }
+    }
+
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setupUi() {
         viewModel.getEmpresas(token)
 
         mountCalendar()
+        handleFormSubmit()
     }
 }

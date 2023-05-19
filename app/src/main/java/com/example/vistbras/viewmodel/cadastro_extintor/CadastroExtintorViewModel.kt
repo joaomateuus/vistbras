@@ -3,7 +3,7 @@ package com.example.vistbras.viewmodel.cadastro_extintor
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.vistbras.models.Empresa
-import com.example.vistbras.models.Extintor
+import com.example.vistbras.models.ExtintorItem
 import com.example.vistbras.repositories.EmpresaRepository
 import com.example.vistbras.repositories.ExtintoresRepository
 import okhttp3.ResponseBody
@@ -40,7 +40,7 @@ constructor(
         })
     }
 
-    fun createExtintor(token: String, extintor: Extintor) {
+    fun createExtintor(token: String, extintor: ExtintorItem) {
         val request = repository.createExtintor(token, extintor)
 
         request.enqueue(object : Callback<ResponseBody> {

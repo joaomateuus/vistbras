@@ -48,8 +48,8 @@
                     android:id="@+id/submit_dados_cadastrais"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="138dp"
-                    android:layout_marginTop="1110dp">
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="910dp">
 
                     <View
                         android:id="@+id/rectangle_2"

@@ -2,6 +2,7 @@ package com.example.vistbras.rest
 
 import com.example.vistbras.models.Empresa
 import com.example.vistbras.models.Extintor
+import com.example.vistbras.models.ExtintorItem
 import com.example.vistbras.models.FiscalRequest
 import com.example.vistbras.models.FiscalUser
 import com.example.vistbras.models.LoginRequest
@@ -52,10 +53,10 @@ interface RetrofitService {
         @Header("Authorization") authorization: String
     ): Call<List<Empresa>>
 
-    @POST("api/v1/extintores")
+    @POST("api/v1/extintores/")
     fun createExtintor(
         @Header("Authorization") authorization: String,
-        @Body extintor: Extintor
+        @Body extintor: ExtintorItem
     ): Call<ResponseBody>
 
     companion object {
