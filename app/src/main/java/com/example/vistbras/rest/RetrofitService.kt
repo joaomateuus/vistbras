@@ -1,5 +1,7 @@
 package com.example.vistbras.rest
 
+import com.example.vistbras.models.Empresa
+import com.example.vistbras.models.Extintor
 import com.example.vistbras.models.FiscalRequest
 import com.example.vistbras.models.FiscalUser
 import com.example.vistbras.models.LoginRequest
@@ -44,6 +46,17 @@ interface RetrofitService {
         @Header("Authorization") authorization: String,
         @Query("user") userId: Int?
     ): Call<FiscalRequest>
+
+    @GET("api/v1/empresas/")
+    fun getEmpresas(
+        @Header("Authorization") authorization: String
+    ): Call<List<Empresa>>
+
+    @POST("api/v1/extintores")
+    fun createExtintor(
+        @Header("Authorization") authorization: String,
+        @Body extintor: Extintor
+    ): Call<ResponseBody>
 
     companion object {
         private val retrofitService: RetrofitService by lazy {

@@ -6,7 +6,6 @@
 
     <application
         android:allowBackup="true"
-        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Vistbras"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".views.CadastroExtintorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.ExtintoresActivity"
+            android:exported="false"
+            android:label="@string/title_activity_extintores"
+            android:theme="@style/Theme.Vistbras" />
         <activity
             android:name=".views.HomeFiscalActivity"
             android:exported="false" />

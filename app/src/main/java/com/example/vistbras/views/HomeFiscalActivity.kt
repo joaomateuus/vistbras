@@ -25,13 +25,14 @@ import com.example.vistbras.viewmodel.fiscal_home.FiscalHomeViewModelFactory
 class HomeFiscalActivity : AppCompatActivity() {
     private lateinit var viewModel: FiscalHomeViewModel
     private val retrofitService = RetrofitService.getInstance()
+    private lateinit var token: String
+    private lateinit var user: User
 
     private lateinit var tableVistoria: TableLayout
     private lateinit var nomeFiscal: TextView
     private lateinit var empresaFiscal: TextView
     private lateinit var codigoFiscal: TextView
-    private lateinit var token: String
-    private lateinit var user: User
+    private lateinit var btnExtintores: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +44,7 @@ class HomeFiscalActivity : AppCompatActivity() {
         nomeFiscal = findViewById(R.id.nome_fiscal)
         empresaFiscal = findViewById(R.id.empresa_fiscal)
         codigoFiscal = findViewById(R.id.cod_fiscal)
+        btnExtintores = findViewById(R.id.btn_extintores)
 
         viewModel = ViewModelProvider(
             this, FiscalHomeViewModelFactory(FiscalRepository(retrofitService))
@@ -56,12 +58,11 @@ class HomeFiscalActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        viewModel.sucessGetVistorias.observe(this, Observer {
-            mountTable(it)
-        })
-
         viewModel.sucessGetLoggedFiscal.observe(this, Observer {
             mountHeader(it)
+        })
+        viewModel.sucessGetVistorias.observe(this, Observer {
+            mountTable(it)
         })
 
         viewModel.errorMessage.observe(this, Observer {
@@ -110,5 +111,9 @@ class HomeFiscalActivity : AppCompatActivity() {
     fun setupUi() {
         viewModel.getVistorias(token)
         viewModel.getLoggedFiscal(token, user.id)
+
+        btnExtintores.setOnClickListener {
+            startActivity(Intent(this, ExtintoresActivity::class.java))
+        }
     }
 }

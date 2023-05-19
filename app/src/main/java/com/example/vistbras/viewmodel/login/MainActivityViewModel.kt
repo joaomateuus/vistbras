@@ -19,7 +19,6 @@ class MainActivityViewModel(
 ) : ViewModel() {
     //    private val tokenStorage = TokenStorage(context)
 //    private val LoggedUserSession = LoggedUserSession(context)
-    val statusLogin = MutableLiveData<Boolean>()
     val statusFetchUser = MutableLiveData<Boolean>()
     val sucessLogin = MutableLiveData<LoginResponse>()
 
