@@ -85,6 +85,11 @@ class HomeFiscalActivity : AppCompatActivity() {
     }
 
     fun mountTable(data: List<Vistoria>) {
+        val rowCount = tableVistoria.childCount
+        for (i in rowCount - 1 downTo 1) {
+            tableVistoria.removeViewAt(i)
+        }
+
         for (i in data) {
             val tableRow = TableRow(this)
 
@@ -94,10 +99,8 @@ class HomeFiscalActivity : AppCompatActivity() {
             val data = TextView(this)
             data.text = if (i.data_agendada == null) "-" else i.data_agendada
 
-
             tableRow.addView(empresa)
             tableRow.addView(data)
-
             tableVistoria.addView(tableRow)
         }
     }

@@ -16,7 +16,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.vistbras.R
 import com.example.vistbras.adapters.EmpresaArrayAdapter
 import com.example.vistbras.models.Empresa
-import com.example.vistbras.models.Extintor
 import com.example.vistbras.models.ExtintorItem
 import com.example.vistbras.models.UserSession
 import com.example.vistbras.repositories.EmpresaRepository
@@ -145,7 +144,6 @@ class CadastroExtintorActivity : AppCompatActivity() {
                         .withZoneSameInstant(ZoneId.ofOffset("UTC", ZoneOffset.UTC))
                         .toLocalDate()
                     Log.i("MaterialDatePicker", "data com LocalDate: $data")
-
                     Log.i("MaterialDatePicker", "data em milisegundos: $dataEmMilisegundos")
 
                     calendarView.text = data.toString()
