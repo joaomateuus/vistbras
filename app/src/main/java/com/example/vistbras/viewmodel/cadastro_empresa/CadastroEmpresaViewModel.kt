@@ -26,7 +26,7 @@ class CadastroEmpresaViewModel constructor(private val repository: EmpresaReposi
             }
 
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                statusCreateEmpresa.postValue(true)
+                statusCreateEmpresa.postValue(false)
             }
         })
     }
