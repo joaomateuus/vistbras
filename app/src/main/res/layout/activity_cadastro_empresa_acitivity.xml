@@ -43,13 +43,46 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/_bg__dados_cadastrais_usuario___novo_ek2_shape" />
 
+                <RelativeLayout
+                    android:id="@+id/submit_dados_dfadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="710dp">
+
+                    <View
+                        android:id="@+id/rectagle_2"
+                        android:layout_width="137dp"
+                        android:layout_height="53dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_shape" />
+
+                    <TextView
+                        android:id="@+id/btn_limpar"
+                        android:layout_width="141dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="100dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="Limpar"
+                        android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
 
                 <RelativeLayout
                     android:id="@+id/submit_dados_cadastrais"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="130dp"
-                    android:layout_marginTop="910dp">
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="710dp">
 
                     <View
                         android:id="@+id/rectangle_2"
@@ -66,6 +99,7 @@
                         android:layout_gravity="center_horizontal|center"
                         android:layout_marginLeft="0dp"
                         android:layout_marginTop="0dp"
+                        android:layout_marginRight="2dp"
                         android:layout_marginBottom="100dp"
                         android:fontFamily="Inter"
                         android:gravity="center"
@@ -105,11 +139,11 @@
                             android:layout_width="242dp"
                             android:layout_height="93dp"
                             android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="154dp"
-                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="164dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="Inter"
                             android:gravity="center"
-                            android:text="@string/cadastro_extintor"
+                            android:text="CADASTRO EMPRESA"
                             android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
                             android:textSize="30sp"
                             android:textStyle="bold" />
@@ -119,20 +153,20 @@
                         android:id="@+id/screenshot_242_4"
                         android:layout_width="87dp"
                         android:layout_height="98dp"
-                        android:layout_marginStart="72dp"
+                        android:layout_marginStart="80dp"
                         android:layout_marginTop="5dp"
                         android:contentDescription="screenshot_242_4"
-                        android:src="@drawable/extintor_2" />
+                        android:src="@drawable/empresa" />
 
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/label_empresa"
+                    android:id="@+id/nome_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="240dp"
-                    android:text="Data valdiade"
+                    android:layout_marginTop="140dp"
+                    android:text="Nome"
                     android:textColor="#000000"
                     android:textSize="22sp" />
 
@@ -141,7 +175,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="275dp">
+                    android:layout_marginTop="175dp">
 
 
                     <RelativeLayout
@@ -159,12 +193,12 @@
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
-                        <TextView
-                            android:id="@+id/dt_validade_input"
+                        <EditText
+                            android:id="@+id/nome_input"
                             android:layout_width="350dp"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
                             android:textColor="#FFFFFF"
@@ -175,45 +209,14 @@
 
                 </RelativeLayout>
 
+
                 <TextView
-                    android:id="@+id/label_codigofiscal"
+                    android:id="@+id/cnpj_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="135dp"
-                    android:text="Empresa"
-                    android:textColor="#000000"
-                    android:textSize="22sp" />
-
-                <RelativeLayout
-                    android:id="@+id/codigo_fiscal_dados_cadastrais"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="34dp"
-                    android:layout_marginTop="170dp">
-
-                    <Spinner
-                        android:id="@+id/sp_empresa"
-                        android:layout_width="360dp"
-                        android:layout_height="wrap_content"
-                        android:padding="20dp" />
-
-                    <TextView
-                        android:id="@+id/tv_result"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center" />
-
-                </RelativeLayout>
-
-
-                <TextView
-                    android:id="@+id/codigo_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="335dp"
-                    android:text="Codigo"
+                    android:layout_marginTop="245dp"
+                    android:text="Cnpj"
                     android:textColor="#000000"
                     android:textSize="22sp" />
 
@@ -222,7 +225,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="360dp">
+                    android:layout_marginTop="260dp">
 
 
                     <RelativeLayout
@@ -230,7 +233,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
+                        android:layout_marginTop="20dp">
 
                         <View
                             android:id="@+id/rectangle_2_ek2"
@@ -241,10 +244,10 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/codigo_input"
-                            android:layout_width="285dp"
-                            android:layout_height="45dp"
-                            android:layout_marginLeft="10dp"
+                            android:id="@+id/cnpj_input"
+                            android:layout_width="340dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Inter"
                             android:text=""
@@ -256,12 +259,12 @@
 
 
                 <TextView
-                    android:id="@+id/nivel_label"
+                    android:id="@+id/contato_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="430dp"
-                    android:text="Nivel"
+                    android:layout_marginTop="345dp"
+                    android:text="Contato"
                     android:textColor="#000000"
                     android:textSize="22sp" />
 
@@ -271,7 +274,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="460dp">
+                    android:layout_marginTop="380dp">
 
 
                     <RelativeLayout
@@ -288,11 +291,11 @@
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rectangle_2_ek2_shape" />
-                        
+
 
                         <EditText
-                            android:id="@+id/nivel_input"
-                            android:layout_width="285dp"
+                            android:id="@+id/contato_input"
+                            android:layout_width="335dp"
                             android:layout_height="48dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
@@ -307,12 +310,12 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/tipo_label"
+                    android:id="@+id/endereco_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="535dp"
-                    android:text="Tipo"
+                    android:layout_marginTop="455dp"
+                    android:text="Endereço"
                     android:textColor="#000000"
                     android:textSize="22sp" />
 
@@ -321,7 +324,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="570dp">
+                    android:layout_marginTop="470dp">
 
 
                     <RelativeLayout
@@ -329,7 +332,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
+                        android:layout_marginTop="20dp">
 
                         <View
                             android:id="@+id/rectangle_4_ek2"
@@ -340,8 +343,8 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/tipo_input"
-                            android:layout_width="285dp"
+                            android:id="@+id/endereco_input"
+                            android:layout_width="335dp"
                             android:layout_height="48dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
@@ -357,12 +360,12 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/tamanho_label"
+                    android:id="@+id/area_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="655dp"
-                    android:text="Tamanho"
+                    android:layout_marginTop="565dp"
+                    android:text="Area atuação"
                     android:textColor="#000000"
                     android:textSize="22sp" />
 
@@ -371,7 +374,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="690dp">
+                    android:layout_marginTop="590dp">
 
 
                     <RelativeLayout
@@ -379,7 +382,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
+                        android:layout_marginTop="10dp">
 
                         <View
                             android:id="@+id/rectangle_6_ek2"
@@ -390,57 +393,8 @@
                             android:background="@drawable/rectangle_2_ek2_shape" />
 
                         <EditText
-                            android:id="@+id/tamanho_input"
-                            android:layout_width="285dp"
-                            android:layout_height="48dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="0dp"
-                            android:fontFamily="Inter"
-                            android:text=""
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/label_local"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="765dp"
-                    android:text="Local"
-                    android:textColor="#000000"
-                    android:textSize="22sp" />
-
-                <RelativeLayout
-                    android:id="@+id/num_telefone_dados_cadastrais"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="34dp"
-                    android:layout_marginTop="800dp">
-
-
-                    <RelativeLayout
-                        android:id="@+id/group_28"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
-
-                        <View
-                            android:id="@+id/rectangle_8_ek2"
-                            android:layout_width="350dp"
-                            android:layout_height="53dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek2_shape" />
-
-                        <EditText
-                            android:id="@+id/local_input"
-                            android:layout_width="285dp"
+                            android:id="@+id/area_input"
+                            android:layout_width="335dp"
                             android:layout_height="48dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"

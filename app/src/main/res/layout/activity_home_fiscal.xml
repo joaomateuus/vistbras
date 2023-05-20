@@ -74,13 +74,13 @@
                     <TextView
                         android:id="@+id/_00"
                         android:layout_width="73.5dp"
-                        android:layout_height="40.5dp"
-                        android:layout_marginLeft="71dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="61dp"
                         android:layout_marginTop="48dp"
                         android:fontFamily="Inter"
                         android:text="@string/_00_string"
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
-                        android:textSize="25sp"
+                        android:textSize="40sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -115,13 +115,13 @@
                     <TextView
                         android:id="@+id/_00_ek1"
                         android:layout_width="73.5dp"
-                        android:layout_height="40.5dp"
+                        android:layout_height="50dp"
                         android:layout_marginLeft="65dp"
-                        android:layout_marginTop="65dp"
+                        android:layout_marginTop="70dp"
                         android:fontFamily="Inter"
                         android:text="@string/_00_ek1_string"
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
-                        android:textSize="25sp"
+                        android:textSize="40sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -130,7 +130,7 @@
                     android:id="@+id/_realizadas_perfil_fiscal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="125dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="70dp">
 
                     <View
@@ -167,6 +167,52 @@
                         android:layout_marginTop="320dp"
                         android:fontFamily="Inter"
                         android:text="Vistorias"
+                        android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/_realizadas_rfil_fiscal"
+                    android:layout_width="157dp"
+                    android:layout_height="366dp"
+                    android:layout_marginStart="245dp"
+                    android:layout_marginTop="70dp">
+
+                    <View
+                        android:id="@+id/rectgle_4"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="200dp"
+                        android:background="@drawable/rectangle_3_shape" />
+
+                    <TextView
+                        android:id="@+id/btn_exttores"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="220dp"
+                        android:fontFamily="Inter"
+                        android:text="Perfil"
+                        android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/rece_5"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="300dp"
+                        android:background="@drawable/rectangle_3_shape" />
+
+                    <TextView
+                        android:id="@+id/btn_empresas"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="320dp"
+                        android:fontFamily="Inter"
+                        android:text="Empresas"
                         android:textColor="@color/_bg__perfil_fiscal___novo_ek2_color"
                         android:textSize="20sp"
                         android:textStyle="bold" />

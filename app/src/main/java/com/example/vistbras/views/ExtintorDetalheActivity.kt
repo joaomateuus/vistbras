@@ -5,38 +5,32 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.AdapterView
 import android.widget.EditText
-import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.vistbras.R
-import com.example.vistbras.adapters.EmpresaArrayAdapter
-import com.example.vistbras.models.Empresa
 import com.example.vistbras.models.ExtintorItem
+import com.example.vistbras.models.ExtintorItemResponse
 import com.example.vistbras.models.UserSession
-import com.example.vistbras.repositories.EmpresaRepository
 import com.example.vistbras.repositories.ExtintoresRepository
 import com.example.vistbras.rest.RetrofitService
-import com.example.vistbras.viewmodel.cadastro_extintor.CadastroExtintorViewModel
-import com.example.vistbras.viewmodel.cadastro_extintor.CadastroExtintorViewModelFactory
+import com.example.vistbras.viewmodel.editar_extintor.ExtintorDetalheViewModel
+import com.example.vistbras.viewmodel.editar_extintor.ExtintorDetalheViewModelFactory
 import com.google.android.material.datepicker.MaterialDatePicker
 import java.time.Instant
 import java.time.ZoneId
 import java.time.ZoneOffset
 
-class CadastroExtintorActivity : AppCompatActivity() {
-    private lateinit var viewModel: CadastroExtintorViewModel
+class ExtintorDetalheActivity : AppCompatActivity() {
+    private lateinit var viewModel: ExtintorDetalheViewModel
     private val retrofitService = RetrofitService.getInstance()
     private lateinit var token: String
 
-    private var selectedEmpresaId: Int? = null
-    private lateinit var option: Spinner
-    private lateinit var result: TextView
+    private var extintorId: Int = 0
+
     private lateinit var calendarView: TextView
     private lateinit var codigoInput: EditText
     private lateinit var nivelInput: EditText
@@ -44,14 +38,20 @@ class CadastroExtintorActivity : AppCompatActivity() {
     private lateinit var tamanhoInput: EditText
     private lateinit var localInput: EditText
     private lateinit var btnSubmit: TextView
+    private lateinit var btnDelete: TextView
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cadastro_extintor)
+        setContentView(R.layout.activity_extintor_detalhe)
 
-        option = findViewById(R.id.sp_empresa)
-        result = findViewById(R.id.tv_result)
+        viewModel = ViewModelProvider(
+            this, ExtintorDetalheViewModelFactory(ExtintoresRepository(retrofitService))
+        ).get(
+            ExtintorDetalheViewModel::class.java
+        )
+        token = UserSession.getToken()
+        extintorId = intent.getIntExtra("extintorId", 0)
         calendarView = findViewById(R.id.dt_validade_input)
         codigoInput = findViewById(R.id.codigo_input)
         nivelInput = findViewById(R.id.nivel_input)
@@ -59,17 +59,7 @@ class CadastroExtintorActivity : AppCompatActivity() {
         tamanhoInput = findViewById(R.id.tamanho_input)
         localInput = findViewById(R.id.local_input)
         btnSubmit = findViewById(R.id.btn_submit)
-
-        viewModel = ViewModelProvider(
-            this,
-            CadastroExtintorViewModelFactory(
-                ExtintoresRepository(retrofitService),
-                EmpresaRepository(retrofitService)
-            )
-        ).get(
-            CadastroExtintorViewModel::class.java
-        )
-        token = UserSession.getToken()
+        btnDelete = findViewById(R.id.btn_delete)
 
         setupUi()
     }
@@ -77,59 +67,44 @@ class CadastroExtintorActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        viewModel.sucessFetchEmpresas.observe(this, Observer {
-            mountSelect(it)
+        viewModel.sucessGetExtintor.observe(this, Observer {
+            mountForm(it)
         })
-        viewModel.errorMessageFetchEmpresas.observe(this, Observer {
-            Toast.makeText(
-                this,
-                it,
-                Toast.LENGTH_LONG
-            ).show()
+        viewModel.failGetExtintor.observe(this, Observer {
+            Toast.makeText(this, it, Toast.LENGTH_LONG).show()
         })
 
-        viewModel.statusCreateExtintor.observe(this, Observer {
+        viewModel.statusEditExtintor.observe(this, Observer {
             if (it) {
-                Toast.makeText(
-                    this,
-                    "Extintor cadastrado com sucesso",
-                    Toast.LENGTH_LONG
-                ).show()
+                Toast.makeText(this, "Extintor editado com sucesso", Toast.LENGTH_LONG).show()
                 startActivity(Intent(this, ExtintoresActivity::class.java))
                 finish()
             } else {
                 Toast.makeText(
                     this,
-                    "Erro ao cadastrar extintor. Tente novamente.",
+                    "Não foi possivel editar o extintor tente novamente",
                     Toast.LENGTH_LONG
                 ).show()
             }
         })
+
     }
 
-    private fun mountSelect(empresas: List<Empresa>) {
-        option.adapter = EmpresaArrayAdapter(this, empresas)
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun setupUi() {
+        viewModel.getExtintor(token, extintorId)
+        saveFormChanges()
+        deleteExtintor()
+        mountCalendar()
+    }
 
-        option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                result.text = "Selecione a empresa que pertence o extintor"
-            }
-
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-
-                val selectedEmpresa = empresas[position]
-                val selectedId = selectedEmpresa.id
-                val selectedNome = selectedEmpresa.nome
-
-                Log.i("log_spinner", "ID: $selectedId, Nome: $selectedNome")
-                selectedEmpresaId = selectedId
-            }
-        }
+    private fun mountForm(extintor: ExtintorItemResponse) {
+        calendarView.text = extintor.data_validade
+        codigoInput.setText(extintor.codigo)
+        nivelInput.setText(extintor.nivel)
+        tipoInput.setText(extintor.tipo)
+        tamanhoInput.setText(extintor.tamanho)
+        localInput.setText(extintor.local)
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -154,30 +129,25 @@ class CadastroExtintorActivity : AppCompatActivity() {
         }
     }
 
-    private fun handleFormSubmit() {
+    private fun saveFormChanges() {
         btnSubmit.setOnClickListener {
             val data = ExtintorItem(
-                empresa = selectedEmpresaId!!,
-                codigo = codigoInput.text.toString(),
                 data_validade = calendarView.text.toString(),
-                local = localInput.text.toString(),
+                codigo = codigoInput.text.toString(),
                 nivel = nivelInput.text.toString(),
-                tamanho = tamanhoInput.text.toString(),
                 tipo = tipoInput.text.toString(),
+                tamanho = tamanhoInput.text.toString(),
+                local = localInput.text.toString(),
                 termo_garantia = true
             )
 
-            Log.i("form", data.toString())
+            viewModel.editExtintor(token, extintorId, data)
 
-            viewModel.createExtintor(token, data)
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
-    private fun setupUi() {
-        viewModel.getEmpresas(token)
-
-        mountCalendar()
-        handleFormSubmit()
+    private fun deleteExtintor() {
+        btnDelete.setOnClickListener {
+        }
     }
 }

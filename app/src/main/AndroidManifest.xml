@@ -16,6 +16,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".views.EmpresaDetalheActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.CadastroEmpresaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.EmpresasAcitvity"
+            android:exported="false" />
+        <activity
+            android:name=".views.ExtintorDetalheActivity"
+            android:exported="false" />
+        <activity
             android:name=".views.CadastroExtintorActivity"
             android:exported="false" />
         <activity

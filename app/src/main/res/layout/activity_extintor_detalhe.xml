@@ -43,13 +43,45 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/_bg__dados_cadastrais_usuario___novo_ek2_shape" />
 
+                <RelativeLayout
+                    android:id="@+id/submit_dados_dfadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="810dp">
+
+                    <View
+                        android:id="@+id/rectagle_2"
+                        android:layout_width="137dp"
+                        android:layout_height="53dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_shape" />
+
+                    <TextView
+                        android:id="@+id/btn_delete"
+                        android:layout_width="141dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="100dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="DELETAR"
+                        android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
 
                 <RelativeLayout
                     android:id="@+id/submit_dados_cadastrais"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="130dp"
-                    android:layout_marginTop="910dp">
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="810dp">
 
                     <View
                         android:id="@+id/rectangle_2"
@@ -69,7 +101,7 @@
                         android:layout_marginBottom="100dp"
                         android:fontFamily="Inter"
                         android:gravity="center"
-                        android:text="Enviar"
+                        android:text="Salvar"
                         android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -109,7 +141,7 @@
                             android:layout_marginTop="25dp"
                             android:fontFamily="Inter"
                             android:gravity="center"
-                            android:text="@string/cadastro_extintor"
+                            android:text="EDITAR EXTINTOR"
                             android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
                             android:textSize="30sp"
                             android:textStyle="bold" />
@@ -131,7 +163,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="240dp"
+                    android:layout_marginTop="140dp"
                     android:text="Data valdiade"
                     android:textColor="#000000"
                     android:textSize="22sp" />
@@ -141,7 +173,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="275dp">
+                    android:layout_marginTop="175dp">
 
 
                     <RelativeLayout
@@ -175,44 +207,13 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/label_codigofiscal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="135dp"
-                    android:text="Empresa"
-                    android:textColor="#000000"
-                    android:textSize="22sp" />
-
-                <RelativeLayout
-                    android:id="@+id/codigo_fiscal_dados_cadastrais"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="34dp"
-                    android:layout_marginTop="170dp">
-
-                    <Spinner
-                        android:id="@+id/sp_empresa"
-                        android:layout_width="360dp"
-                        android:layout_height="wrap_content"
-                        android:padding="20dp" />
-
-                    <TextView
-                        android:id="@+id/tv_result"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center" />
-
-                </RelativeLayout>
-
 
                 <TextView
                     android:id="@+id/codigo_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="335dp"
+                    android:layout_marginTop="235dp"
                     android:text="Codigo"
                     android:textColor="#000000"
                     android:textSize="22sp" />
@@ -222,7 +223,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="360dp">
+                    android:layout_marginTop="260dp">
 
 
                     <RelativeLayout
@@ -260,7 +261,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="430dp"
+                    android:layout_marginTop="330dp"
                     android:text="Nivel"
                     android:textColor="#000000"
                     android:textSize="22sp" />
@@ -271,7 +272,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="460dp">
+                    android:layout_marginTop="360dp">
 
 
                     <RelativeLayout
@@ -288,7 +289,7 @@
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rectangle_2_ek2_shape" />
-                        
+
 
                         <EditText
                             android:id="@+id/nivel_input"
@@ -311,7 +312,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="535dp"
+                    android:layout_marginTop="435dp"
                     android:text="Tipo"
                     android:textColor="#000000"
                     android:textSize="22sp" />
@@ -321,7 +322,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="570dp">
+                    android:layout_marginTop="470dp">
 
 
                     <RelativeLayout
@@ -361,7 +362,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="655dp"
+                    android:layout_marginTop="555dp"
                     android:text="Tamanho"
                     android:textColor="#000000"
                     android:textSize="22sp" />
@@ -371,7 +372,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="690dp">
+                    android:layout_marginTop="590dp">
 
 
                     <RelativeLayout
@@ -410,7 +411,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="765dp"
+                    android:layout_marginTop="665dp"
                     android:text="Local"
                     android:textColor="#000000"
                     android:textSize="22sp" />
@@ -420,7 +421,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
-                    android:layout_marginTop="800dp">
+                    android:layout_marginTop="700dp">
 
 
                     <RelativeLayout
@@ -451,10 +452,7 @@
                             android:textStyle="bold" />
 
                     </RelativeLayout>
-
                 </RelativeLayout>
-
-
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>

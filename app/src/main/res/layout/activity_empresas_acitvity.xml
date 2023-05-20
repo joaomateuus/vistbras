@@ -7,7 +7,7 @@
     tools:context=".views.MainActivity">
 
     <ImageView
-        android:id="@+id/img_no_extintores"
+        android:id="@+id/img_no_empresas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-120dp"
@@ -26,32 +26,32 @@
         android:alpha="0.5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_no_extintores"
+        app:layout_constraintTop_toBottomOf="@+id/tv_no_empresas"
         app:srcCompat="@drawable/arrow" />
 
     <TextView
-        android:id="@+id/tv_no_extintores"
+        android:id="@+id/tv_no_empresas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:alpha="0.7"
         android:gravity="center"
-        android:text="Sem extintores cadastrados.\nCadastre o primeiro!"
+        android:text="Sem empresas cadastradas.\nCadastre a primeira!"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_no_extintores" />
+        app:layout_constraintTop_toBottomOf="@+id/img_no_empresas" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_extintores"
-        android:visibility="gone"
+        android:id="@+id/rv_empresas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_new_extintor"
+        android:id="@+id/fab_new_empresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"

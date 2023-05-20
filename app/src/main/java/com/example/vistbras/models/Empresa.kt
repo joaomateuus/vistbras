@@ -1,7 +1,7 @@
 package com.example.vistbras.models
 
 data class Empresa(
-    val id: Int,
+    val id: Int? = null,
     val nome: String,
     val area_atuacao: String,
     val cnpj: String,

@@ -3,6 +3,7 @@ package com.example.vistbras.views
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.TypedValue
 import android.widget.RelativeLayout
 import android.widget.TableLayout
 import android.widget.TableRow
@@ -33,6 +34,7 @@ class HomeFiscalActivity : AppCompatActivity() {
     private lateinit var empresaFiscal: TextView
     private lateinit var codigoFiscal: TextView
     private lateinit var btnExtintores: TextView
+    private lateinit var btnEmpresas: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +47,7 @@ class HomeFiscalActivity : AppCompatActivity() {
         empresaFiscal = findViewById(R.id.empresa_fiscal)
         codigoFiscal = findViewById(R.id.cod_fiscal)
         btnExtintores = findViewById(R.id.btn_extintores)
+        btnEmpresas = findViewById(R.id.btn_empresas)
 
         viewModel = ViewModelProvider(
             this, FiscalHomeViewModelFactory(FiscalRepository(retrofitService))
@@ -95,7 +98,6 @@ class HomeFiscalActivity : AppCompatActivity() {
 
             val empresa = TextView(this)
             empresa.text = if (i.empresa == null) "-" else i.empresa
-
             val data = TextView(this)
             data.text = if (i.data_agendada == null) "-" else i.data_agendada
 
@@ -117,6 +119,10 @@ class HomeFiscalActivity : AppCompatActivity() {
 
         btnExtintores.setOnClickListener {
             startActivity(Intent(this, ExtintoresActivity::class.java))
+        }
+
+        btnEmpresas.setOnClickListener {
+            startActivity(Intent(this, EmpresasAcitvity::class.java))
         }
     }
 }
