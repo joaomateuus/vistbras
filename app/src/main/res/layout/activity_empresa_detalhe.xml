@@ -1,9 +1,416 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".views.EmpresaDetalheActivity">
+    android:layout_height="wrap_content">
+    <!--
+    /*
+     *	This content is generated from the API File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc
+     *	@file 		dados_cadastrais_usuario___novo
+     *	@date 		Tuesday 09th of May 2023 11:13:58 PM
+     *	@title 		Page 2
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.3.figma
+     *
+     */
+    -->
+    <ScrollView
+        android:id="@+id/dados_cadastrais_usuario___novo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/page_dados_cadastrais_usuario___novo_ek1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp">
+
+
+                <View
+                    android:id="@+id/_bg__dados_cadastrais_usuario___novo_ek2"
+                    android:layout_width="429dp"
+                    android:layout_height="914dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/_bg__dados_cadastrais_usuario___novo_ek2_shape" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="680dp">
+
+                    <View
+                        android:layout_width="137dp"
+                        android:layout_height="53dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_shape" />
+
+                    <TextView
+                        android:id="@+id/btn_delete"
+                        android:layout_width="141dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="100dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="Deletar"
+                        android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/submit_dados_cadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="680dp">
+
+                    <View
+                        android:id="@+id/rectangle_2"
+                        android:layout_width="137dp"
+                        android:layout_height="53dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_shape" />
+
+                    <TextView
+                        android:id="@+id/btn_submit"
+                        android:layout_width="141dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="100dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="Salvar"
+                        android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/dados_cadastrais_painel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="0dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_2_ek1"
+                            android:layout_width="600dp"
+                            android:layout_height="109dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek1_shape" />
+
+                        <TextView
+                            android:id="@+id/dados_cadastrais"
+                            android:layout_width="242dp"
+                            android:layout_height="93dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="164dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="Inter"
+                            android:gravity="center"
+                            android:text="EDITAR EMPRESA"
+                            android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/screenshot_242_4"
+                        android:layout_width="87dp"
+                        android:layout_height="98dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="5dp"
+                        android:contentDescription="screenshot_242_4"
+                        android:src="@drawable/empresa" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/label_empresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="120dp"
+                    android:text="Nome"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/empresa_dados_cadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="155dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_10_ek2"
+                            android:layout_width="350dp"
+                            android:layout_height="53dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek4_shape" />
+
+                        <EditText
+                            android:id="@+id/nome_input"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="Inter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/codigo_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="230dp"
+                    android:text="Cnpj"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/nome_dados_cadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="260dp">
+
+                    <RelativeLayout
+                        android:id="@+id/group_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_2_ek2"
+                            android:layout_width="350dp"
+                            android:layout_height="53dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek4_shape" />
+
+                        <EditText
+                            android:id="@+id/cnpj_input"
+                            android:layout_width="325dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@null"
+                            android:fontFamily="Inter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/nivel_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="330dp"
+                    android:text="Contato"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/iduser_dados_cadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="360dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_3_ek2"
+                            android:layout_width="350dp"
+                            android:layout_height="53dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek4_shape" />
+
+
+                        <EditText
+                            android:id="@+id/contato_input"
+                            android:layout_width="285dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@null"
+                            android:fontFamily="Inter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tipo_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="435dp"
+                    android:text="Endereco"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/email_dados_cadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="470dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_4_ek2"
+                            android:layout_width="350dp"
+                            android:layout_height="53dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek4_shape" />
+
+                        <EditText
+                            android:id="@+id/endereco_input"
+                            android:layout_width="285dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@null"
+                            android:fontFamily="Inter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tamanho_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="545dp"
+                    android:text="Area Atuacao"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/cpf_dados_cadastrais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="580dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_6_ek2"
+                            android:layout_width="350dp"
+                            android:layout_height="53dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek4_shape" />
+
+                        <EditText
+                            android:id="@+id/area_input"
+                            android:layout_width="285dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@null"
+                            android:fontFamily="Inter"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</HorizontalScrollView>

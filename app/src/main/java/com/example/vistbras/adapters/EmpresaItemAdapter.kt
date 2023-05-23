@@ -53,10 +53,10 @@ class EmpresaItemAdapter(private val onItemClicked: (Empresa) -> Unit) :
             area.text = empresa.area_atuacao
             endereco.text = empresa.endereco
 
-            onItemClicked(empresa)
 
+            itemView.setOnClickListener {
+                onItemClicked(empresa)
+            }
         }
-
-
     }
 }

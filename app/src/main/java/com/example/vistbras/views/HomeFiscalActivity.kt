@@ -3,6 +3,7 @@ package com.example.vistbras.views
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.TypedValue
 import android.widget.RelativeLayout
 import android.widget.TableLayout
@@ -17,6 +18,7 @@ import com.example.vistbras.models.FiscalRequest
 import com.example.vistbras.models.User
 import com.example.vistbras.models.UserSession
 import com.example.vistbras.models.Vistoria
+import com.example.vistbras.models.VistoriaAgendada
 import com.example.vistbras.repositories.FiscalRepository
 import com.example.vistbras.rest.RetrofitService
 import com.example.vistbras.store.LoggedUserSession
@@ -35,6 +37,8 @@ class HomeFiscalActivity : AppCompatActivity() {
     private lateinit var codigoFiscal: TextView
     private lateinit var btnExtintores: TextView
     private lateinit var btnEmpresas: TextView
+    private lateinit var btnRealizarVistoria: TextView
+    private lateinit var btnAgendarVistoria: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +52,8 @@ class HomeFiscalActivity : AppCompatActivity() {
         codigoFiscal = findViewById(R.id.cod_fiscal)
         btnExtintores = findViewById(R.id.btn_extintores)
         btnEmpresas = findViewById(R.id.btn_empresas)
+        btnRealizarVistoria = findViewById(R.id.btn_realizar_vistoria)
+        btnAgendarVistoria = findViewById(R.id.btn_agendar_vistoria)
 
         viewModel = ViewModelProvider(
             this, FiscalHomeViewModelFactory(FiscalRepository(retrofitService))
@@ -63,6 +69,7 @@ class HomeFiscalActivity : AppCompatActivity() {
 
         viewModel.sucessGetLoggedFiscal.observe(this, Observer {
             mountHeader(it)
+            LoggedUserSession.setFiscalData(it)
         })
         viewModel.sucessGetVistorias.observe(this, Observer {
             mountTable(it)
@@ -87,7 +94,7 @@ class HomeFiscalActivity : AppCompatActivity() {
         })
     }
 
-    fun mountTable(data: List<Vistoria>) {
+    fun mountTable(data: List<VistoriaAgendada>) {
         val rowCount = tableVistoria.childCount
         for (i in rowCount - 1 downTo 1) {
             tableVistoria.removeViewAt(i)
@@ -97,7 +104,7 @@ class HomeFiscalActivity : AppCompatActivity() {
             val tableRow = TableRow(this)
 
             val empresa = TextView(this)
-            empresa.text = if (i.empresa == null) "-" else i.empresa
+            empresa.text = if (i.empresa == null) "-" else i.empresa_agendada
             val data = TextView(this)
             data.text = if (i.data_agendada == null) "-" else i.data_agendada
 
@@ -123,6 +130,14 @@ class HomeFiscalActivity : AppCompatActivity() {
 
         btnEmpresas.setOnClickListener {
             startActivity(Intent(this, EmpresasAcitvity::class.java))
+        }
+
+        btnRealizarVistoria.setOnClickListener {
+            startActivity(Intent(this, SelectVistoriaAgendadaActivity::class.java))
+        }
+
+        btnAgendarVistoria.setOnClickListener {
+            startActivity(Intent(this, AgendarVistoriaAcitivity::class.java))
         }
     }
 }

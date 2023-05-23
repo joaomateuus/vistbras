@@ -112,7 +112,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/cadastre_usuario"
+                            android:id="@+id/btn_cadastro_usuario"
                             android:layout_width="183dp"
                             android:layout_height="34dp"
                             android:layout_marginLeft="0dp"
@@ -153,7 +153,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/cadastro_fiscal"
+                            android:id="@+id/btn_cadastro_fiscal"
                             android:layout_width="183dp"
                             android:layout_height="34dp"
                             android:layout_marginLeft="0dp"

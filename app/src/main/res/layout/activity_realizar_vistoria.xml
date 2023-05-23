@@ -1,0 +1,485 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/perfil_fiscal___novo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/page_perfil_fiscal___novo_ek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp">
+
+                <View
+                    android:id="@+id/rectangle_2"
+                    android:layout_width="429dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rectangle_2_shape" />
+
+                <TextView
+                    android:id="@+id/dados_cadastrais"
+                    android:layout_width="242dp"
+                    android:layout_height="93dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginLeft="154dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="Inter"
+                    android:gravity="center"
+                    android:text="Vistoria Extintor"
+                    android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                    android:textSize="30sp"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contencontainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="145dp"
+                    android:text="Detalhes Gerais"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <View
+                    android:id="@+id/rectangle_10_ek2"
+                    android:layout_width="390dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/rectangle_2_ek4_shape" />
+
+                <TextView
+                    android:id="@+id/abel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="185dp"
+                    android:text="Data de inspeção"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/dt_inspecao_text"
+                    android:layout_width="365dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="210dp"
+                    android:fontFamily="Inter"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/retangle_10_ek2"
+                    android:layout_width="390dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="270dp"
+                    android:background="@drawable/rectangle_2_ek4_shape" />
+
+                <TextView
+                    android:id="@+id/ael"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="270dp"
+                    android:text="Inspecionado por"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/fiscal_nome_text"
+                    android:layout_width="365dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="300dp"
+                    android:fontFamily="Inter"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/extintor_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="360dp"
+                android:text="Extintor"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:id="@+id/codigo_fiscal_dados_cadastrais"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="390dp">
+
+                <Spinner
+                    android:id="@+id/sp_extintor"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contecontainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:id="@+id/lbel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="490dp"
+                    android:text="Requisitos Gerais"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/bocal_question"
+                    android:layout_width="365dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="535dp"
+                    android:fontFamily="Inter"
+                    android:text="O bocal do extintor esta vedado adequadamente para evitar vasamentos ?"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_yes_bocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="610dp"
+                    android:text="Sim"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_no_bocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="610dp"
+                    android:text="Não"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/rectange_10_ek2"
+                    android:layout_width="390dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="530dp"
+                    android:background="@drawable/rectangle_2_ek4_shape" />
+
+
+                <View
+                    android:id="@+id/rectage_10_ek2"
+                    android:layout_width="390dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="680dp"
+                    android:background="@drawable/rectangle_2_ek4_shape" />
+
+                <TextView
+                    android:id="@+id/inicador_pressao_question"
+                    android:layout_width="365dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="685dp"
+                    android:fontFamily="Inter"
+                    android:text="O indicador de pressão está funcionando corretamente?"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_yes_indicadorpress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="760dp"
+                    android:text="Sim"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_no_indicadorpress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="760dp"
+                    android:text="Não"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/rece_10_ek2"
+                    android:layout_width="390dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="830dp"
+                    android:background="@drawable/rectangle_2_ek4_shape" />
+
+                <TextView
+                    android:id="@+id/pino_seguranca_question"
+                    android:layout_width="365dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="835dp"
+                    android:fontFamily="Inter"
+                    android:text="O pino de segurança está intacto?"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_yes_pino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="900dp"
+                    android:text="Sim"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_no_pino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="900dp"
+                    android:text="Não"
+                    android:textSize="20sp" />
+
+
+                <View
+                    android:id="@+id/reghce_10_ek2"
+                    android:layout_width="390dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="990dp"
+                    android:background="@drawable/rectangle_2_ek4_shape" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_no_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="1060dp"
+                    android:text="Não"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_yes_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="1060dp"
+                    android:text="Sim"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/local_question"
+                    android:layout_width="365dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="995dp"
+                    android:fontFamily="Inter"
+                    android:text="O extintor está instalado em local de fácil acesso e visibilidade?"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:id="@+id/contontainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp">
+
+                    <View
+                        android:id="@+id/re_10_ek2"
+                        android:layout_width="390dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1180dp"
+                        android:background="@drawable/rectangle_2_ek4_shape" />
+
+                    <TextView
+                        android:id="@+id/lal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="1140dp"
+                        android:text="Anotações e Anexos"
+                        android:textColor="#000000"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/aedfsl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="1190dp"
+                        android:text="Informações"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/informacoes_input"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="1210dp"
+                        android:fontFamily="Inter"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:id="@+id/reds10_ek2"
+                        android:layout_width="390dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1330dp"
+                        android:background="@drawable/rectangle_2_ek4_shape" />
+
+                    <TextView
+                        android:id="@+id/aedfsasl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="1330dp"
+                        android:text="Comentarios"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/comentarios_input"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="1355dp"
+                        android:fontFamily="Inter"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:id="@+id/re_10_asek2"
+                        android:layout_width="390dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1480dp"
+                        android:background="@drawable/rectangle_2_ek4_shape" />
+
+                    <TextView
+                        android:id="@+id/aewerdfsasl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="1480dp"
+                        android:text="Resultado"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/resultado_input"
+                        android:layout_width="365dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="1510dp"
+                        android:fontFamily="Inter"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/btn_picture"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="1650dp"
+                    android:background="@drawable/rectangle_3_shape" />
+
+                <TextView
+                    android:id="@+id/fglal"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="1670dp"
+                    android:text="Tirar foto"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:id="@+id/contonner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="1750dp"
+                    android:layout_marginBottom="100dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_anexo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.5"
+                            android:src="@drawable/no_image" />
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/btn_submit"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="1650dp"
+                    android:background="@drawable/rectangle_3_shape" />
+
+                <TextView
+                    android:id="@+id/text_concluir"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="1670dp"
+                    android:text="Concluir"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</HorizontalScrollView>

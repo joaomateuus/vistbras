@@ -81,7 +81,10 @@ class EmpresasAcitvity : AppCompatActivity() {
         }
 
         this.adapter = EmpresaItemAdapter {
-            Log.i("empresa", it.nome)
+            val intent = Intent(this, EmpresaDetalheActivity::class.java)
+            intent.putExtra("empresaId", it.id)
+            startActivity(intent)
+            finish()
         }
 
         rvEmpresas.addItemDecoration(

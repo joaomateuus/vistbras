@@ -189,7 +189,7 @@
                             android:layout_height="53dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek2_shape" />
+                            android:background="@drawable/rectangle_2_ek4_shape" />
 
                         <TextView
                             android:id="@+id/dt_validade_input"
@@ -197,10 +197,11 @@
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
+                            android:background="@null"
                             android:fontFamily="Inter"
                             android:text=""
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -239,7 +240,7 @@
                             android:layout_height="53dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek2_shape" />
+                            android:background="@drawable/rectangle_2_ek4_shape" />
 
                         <EditText
                             android:id="@+id/codigo_input"
@@ -247,10 +248,11 @@
                             android:layout_height="45dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
+                            android:background="@null"
                             android:fontFamily="Inter"
                             android:text=""
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </RelativeLayout>
@@ -288,7 +290,7 @@
                             android:layout_height="53dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek2_shape" />
+                            android:background="@drawable/rectangle_2_ek4_shape" />
 
 
                         <EditText
@@ -297,10 +299,11 @@
                             android:layout_height="48dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
+                            android:background="@null"
                             android:fontFamily="Inter"
                             android:text=""
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -338,7 +341,7 @@
                             android:layout_height="53dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek2_shape" />
+                            android:background="@drawable/rectangle_2_ek4_shape" />
 
                         <EditText
                             android:id="@+id/tipo_input"
@@ -346,10 +349,11 @@
                             android:layout_height="48dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
+                            android:background="@null"
                             android:fontFamily="Inter"
                             android:text=""
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -388,7 +392,7 @@
                             android:layout_height="53dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek2_shape" />
+                            android:background="@drawable/rectangle_2_ek4_shape" />
 
                         <EditText
                             android:id="@+id/tamanho_input"
@@ -396,12 +400,12 @@
                             android:layout_height="48dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
+                            android:background="@null"
                             android:fontFamily="Inter"
                             android:text=""
-                            android:textColor="#FFFFFF"
+                            android:textColor="#000000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
-
                     </RelativeLayout>
 
                 </RelativeLayout>
@@ -437,7 +441,7 @@
                             android:layout_height="53dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek2_shape" />
+                            android:background="@drawable/rectangle_2_ek4_shape" />
 
                         <EditText
                             android:id="@+id/local_input"
@@ -445,10 +449,11 @@
                             android:layout_height="48dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
+                            android:background="@null"
                             android:fontFamily="Inter"
                             android:text=""
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>

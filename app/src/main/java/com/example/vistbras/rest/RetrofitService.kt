@@ -9,10 +9,10 @@ import com.example.vistbras.models.FiscalUser
 import com.example.vistbras.models.LoginRequest
 import com.example.vistbras.models.LoginResponse
 import com.example.vistbras.models.User
-import com.example.vistbras.models.Vistoria
+import com.example.vistbras.models.VistoriaAgendada
+import com.example.vistbras.models.VistoriaRealizada
 import okhttp3.ResponseBody
 import retrofit2.Call
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
@@ -41,10 +41,16 @@ interface RetrofitService {
         @Path("id") id: Int
     ): Call<User>
 
-    @GET("api/v1/vistorias/")
-    fun getVistorias(
+    @GET("api/v1/vistorias_agendadas/")
+    fun getVistoriasAgendadas(
         @Header("Authorization") authorization: String
-    ): Call<List<Vistoria>>
+    ): Call<List<VistoriaAgendada>>
+
+    @POST("api/v1/vistorias_agendadas/")
+    fun createVistoriaAgendada(
+        @Header("Authorization") authorization: String,
+        @Body vistoriaAgendada: VistoriaAgendada
+    ): Call<ResponseBody>
 
     @POST("api/v1/fiscais/get_fiscal_by_user_id/")
     fun getLoggedFiscal(
@@ -69,7 +75,7 @@ interface RetrofitService {
         @Path("id") id: Int,
     ): Call<Empresa>
 
-    @PUT("api/v1/empresas/{id}")
+    @PUT("api/v1/empresas/{id}/")
     fun editEmpresa(
         @Header("Authorization") authorization: String,
         @Path("id") id: Int,
@@ -105,6 +111,12 @@ interface RetrofitService {
         @Path("id") id: Int,
         @Body extintor: ExtintorItem
     ): Call<ExtintorItemResponse>
+
+    @POST("api/v1/vistorias_realizadas/")
+    fun createVistoria(
+        @Header("Authorization") authorization: String,
+        @Body vistoriaRealizada: VistoriaRealizada
+    ): Call<ResponseBody>
 
     companion object {
         private val retrofitService: RetrofitService by lazy {

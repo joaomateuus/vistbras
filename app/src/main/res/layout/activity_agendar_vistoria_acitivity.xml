@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="240dp"
-                    android:text="Data valdiade"
+                    android:text="Data Agendada"
                     android:textColor="#000000"
                     android:textSize="22sp" />
 
@@ -152,7 +152,7 @@
                         android:layout_marginTop="0dp">
 
                         <View
-                            android:id="@+id/rectangle_10_ek2"
+                            android:id="@+id/calendarView"
                             android:layout_width="350dp"
                             android:layout_height="53dp"
                             android:layout_marginStart="0dp"
@@ -160,17 +160,16 @@
                             android:background="@drawable/rectangle_2_ek4_shape" />
 
                         <TextView
-                            android:id="@+id/dt_validade_input"
-                            android:layout_width="350dp"
-                            android:layout_height="50dp"
+                            android:id="@+id/dt_agendada_input"
+                            android:layout_width="340dp"
+                            android:layout_height="45dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="3dp"
                             android:fontFamily="Inter"
                             android:text=""
                             android:textColor="#000000"
                             android:textSize="15sp"
                             android:textStyle="bold" />
-
                     </RelativeLayout>
 
                 </RelativeLayout>
@@ -208,17 +207,17 @@
 
 
                 <TextView
-                    android:id="@+id/codigo_label"
+                    android:id="@+id/contato_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="335dp"
-                    android:text="Codigo"
+                    android:text="Contato"
                     android:textColor="#000000"
                     android:textSize="22sp" />
 
                 <RelativeLayout
-                    android:id="@+id/nome_dados_cadastrais"
+                    android:id="@+id/nome_dados_cdastrais"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="34dp"
@@ -240,11 +239,11 @@
                             android:background="@drawable/rectangle_2_ek4_shape" />
 
                         <EditText
-                            android:id="@+id/codigo_input"
+                            android:id="@+id/contato_input"
                             android:layout_width="325dp"
                             android:layout_height="45dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginTop="0dp"
+                            android:layout_marginTop="5dp"
                             android:background="@null"
                             android:fontFamily="Inter"
                             android:text=""
@@ -253,212 +252,61 @@
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </RelativeLayout>
-
-
-                <TextView
-                    android:id="@+id/nivel_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="430dp"
-                    android:text="Nivel"
-                    android:textColor="#000000"
-                    android:textSize="22sp" />
-
-
                 <RelativeLayout
-                    android:id="@+id/iduser_dados_cadastrais"
+                    android:id="@+id/nome_dados_cadastrais"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="34dp"
-                    android:layout_marginTop="460dp">
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="500dp">
 
-
-                    <RelativeLayout
-                        android:id="@+id/group_20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <View
+                        android:id="@+id/rectangle_4"
+                        android:layout_width="137dp"
+                        android:layout_height="53dp"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_shape" />
 
-                        <View
-                            android:id="@+id/rectangle_3_ek2"
-                            android:layout_width="350dp"
-                            android:layout_height="53dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek4_shape" />
-
-
-                        <EditText
-                            android:id="@+id/nivel_input"
-                            android:layout_width="285dp"
-                            android:layout_height="48dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@null"
-                            android:fontFamily="Inter"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tipo_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="535dp"
-                    android:text="Tipo"
-                    android:textColor="#000000"
-                    android:textSize="22sp" />
-
-                <RelativeLayout
-                    android:id="@+id/email_dados_cadastrais"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="34dp"
-                    android:layout_marginTop="570dp">
-
-
-                    <RelativeLayout
-                        android:id="@+id/group_21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <TextView
+                        android:id="@+id/btn_limpar"
+                        android:layout_width="141dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center_horizontal|center"
                         android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="100dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="Limpar"
+                        android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-                        <View
-                            android:id="@+id/rectangle_4_ek2"
-                            android:layout_width="350dp"
-                            android:layout_height="53dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek4_shape" />
+                    <View
+                        android:id="@+id/rectangle_5"
+                        android:layout_width="137dp"
+                        android:layout_height="53dp"
+                        android:layout_marginStart="190dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rectangle_2_shape" />
 
-                        <EditText
-                            android:id="@+id/tipo_input"
-                            android:layout_width="285dp"
-                            android:layout_height="48dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@null"
-                            android:fontFamily="Inter"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="141dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginStart="190dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="100dp"
+                        android:fontFamily="Inter"
+                        android:gravity="center"
+                        android:text="Enviar"
+                        android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
 
                 </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/tamanho_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="655dp"
-                    android:text="Tamanho"
-                    android:textColor="#000000"
-                    android:textSize="22sp" />
-
-                <RelativeLayout
-                    android:id="@+id/cpf_dados_cadastrais"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="34dp"
-                    android:layout_marginTop="690dp">
-
-
-                    <RelativeLayout
-                        android:id="@+id/group_25"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
-
-                        <View
-                            android:id="@+id/rectangle_6_ek2"
-                            android:layout_width="350dp"
-                            android:layout_height="53dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek4_shape" />
-
-                        <EditText
-                            android:id="@+id/tamanho_input"
-                            android:layout_width="285dp"
-                            android:layout_height="48dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@null"
-                            android:fontFamily="Inter"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/label_local"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="765dp"
-                    android:text="Local"
-                    android:textColor="#000000"
-                    android:textSize="22sp" />
-
-                <RelativeLayout
-                    android:id="@+id/num_telefone_dados_cadastrais"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="34dp"
-                    android:layout_marginTop="800dp">
-
-
-                    <RelativeLayout
-                        android:id="@+id/group_28"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp">
-
-                        <View
-                            android:id="@+id/rectangle_8_ek2"
-                            android:layout_width="350dp"
-                            android:layout_height="53dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_2_ek4_shape" />
-
-                        <EditText
-                            android:id="@+id/local_input"
-                            android:layout_width="285dp"
-                            android:layout_height="48dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@null"
-                            android:fontFamily="Inter"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
-
-
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>

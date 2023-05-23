@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.vistbras.models.FiscalRequest
 import com.example.vistbras.models.Vistoria
+import com.example.vistbras.models.VistoriaAgendada
 import com.example.vistbras.repositories.FiscalRepository
 import retrofit2.Call
 import retrofit2.Callback
@@ -11,7 +12,7 @@ import retrofit2.Response
 import java.net.HttpURLConnection
 
 class FiscalHomeViewModel(private val repository: FiscalRepository) : ViewModel() {
-    val sucessGetVistorias = MutableLiveData<List<Vistoria>>()
+    val sucessGetVistorias = MutableLiveData<List<VistoriaAgendada>>()
     val sucessGetLoggedFiscal = MutableLiveData<FiscalRequest>()
 
     val errorMessage = MutableLiveData<String>()
@@ -20,10 +21,10 @@ class FiscalHomeViewModel(private val repository: FiscalRepository) : ViewModel(
     fun getVistorias(token: String) {
         val request = repository.getVistorias(token)
 
-        request.enqueue(object : Callback<List<Vistoria>> {
+        request.enqueue(object : Callback<List<VistoriaAgendada>> {
             override fun onResponse(
-                call: Call<List<Vistoria>>,
-                response: Response<List<Vistoria>>
+                call: Call<List<VistoriaAgendada>>,
+                response: Response<List<VistoriaAgendada>>
             ) {
                 if (response.code() == HttpURLConnection.HTTP_OK) {
                     sucessGetVistorias.postValue(response.body())
@@ -32,7 +33,7 @@ class FiscalHomeViewModel(private val repository: FiscalRepository) : ViewModel(
                 }
             }
 
-            override fun onFailure(call: Call<List<Vistoria>>, t: Throwable) {
+            override fun onFailure(call: Call<List<VistoriaAgendada>>, t: Throwable) {
                 errorMessage.postValue("Nao foi possivel buscar as vistorias")
             }
         })

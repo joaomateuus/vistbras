@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var usuarioInput: EditText
     private lateinit var passwordInput: EditText
     private lateinit var submitButton: View
+    private lateinit var btnCadastrarUsuario: TextView
+    private lateinit var btnCadastroFiscal: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +36,8 @@ class MainActivity : AppCompatActivity() {
         usuarioInput = findViewById(R.id.username_input)
         passwordInput = findViewById(R.id.password_input)
         submitButton = findViewById(R.id.btn_submit)
+        btnCadastrarUsuario = findViewById(R.id.btn_cadastro_usuario)
+        btnCadastroFiscal = findViewById(R.id.btn_cadastro_fiscal)
 
 
         viewModel = ViewModelProvider(
@@ -80,6 +85,14 @@ class MainActivity : AppCompatActivity() {
                     passwordInput.text.toString()
                 )
             )
+        }
+
+        btnCadastrarUsuario.setOnClickListener {
+            startActivity(Intent(this, CadastroUsuarioActivity::class.java))
+        }
+
+        btnCadastroFiscal.setOnClickListener {
+            startActivity(Intent(this, CadastroFiscalActivity::class.java))
         }
     }
 }
