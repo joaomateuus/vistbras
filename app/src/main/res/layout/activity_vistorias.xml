@@ -1,0 +1,140 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--
+    /*
+     *	This content is generated from the API File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc
+     *	@file 		dados_cadastrais_usuario___novo
+     *	@date 		Tuesday 09th of May 2023 11:13:58 PM
+     *	@title 		Page 2
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.3.figma
+     *
+     */
+    -->
+    <ScrollView
+        android:id="@+id/dados_cadastrais_usuario___novo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/page_dados_cadastrais_usuario___novo_ek1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp">
+
+                <View
+                    android:id="@+id/_bg__dados_cadastrais_usuario___novo_ek2"
+                    android:layout_width="429dp"
+                    android:layout_height="914dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/_bg__dados_cadastrais_usuario___novo_ek2_shape" />
+
+
+                <RelativeLayout
+                    android:id="@+id/dados_cadastrais_painel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="0dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/group_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                        <View
+                            android:id="@+id/rectangle_2_ek1"
+                            android:layout_width="600dp"
+                            android:layout_height="109dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_2_ek1_shape" />
+
+                        <ImageView
+                            android:id="@+id/screenshot_242_4"
+                            android:layout_width="87dp"
+                            android:layout_height="98dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:contentDescription="screenshot_242_4"
+                            android:src="@drawable/vistoria_icon" />
+
+
+                        <TextView
+                            android:id="@+id/dados_cadastrais"
+                            android:layout_width="242dp"
+                            android:layout_height="93dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="154dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="Inter"
+                            android:gravity="center"
+                            android:text="VISTORIAS"
+                            android:textColor="@color/_bg__dados_cadastrais_usuario___novo_ek2_color"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+
+                        <View
+                            android:id="@+id/btn_vist_realizadas"
+                            android:layout_width="160dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="240dp"
+                            android:layout_marginTop="340dp"
+                            android:background="@drawable/rectangle_3_shape" />
+
+                        <TextView
+                            android:id="@+id/tv_vistoria_realizada"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="270dp"
+                            android:layout_marginTop="355dp"
+                            android:fontFamily="Inter"
+                            android:text="Vistorias Realizadas"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+
+                        <View
+                            android:id="@+id/btn_vist_agendadas"
+                            android:layout_width="160dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="340dp"
+                            android:background="@drawable/rectangle_3_shape" />
+
+                        <TextView
+                            android:id="@+id/btn_realzar_vistoria"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginTop="355dp"
+                            android:fontFamily="Inter"
+                            android:text="Vistorias Agendadas"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</HorizontalScrollView>

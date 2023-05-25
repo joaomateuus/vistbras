@@ -22,4 +22,8 @@ object LoggedUserSession {
 
     fun getFiscal(): FiscalRequest? = _fiscal
 
+    fun clearUser() {
+        _user = null
+    }
+
 }

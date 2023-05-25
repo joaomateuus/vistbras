@@ -1,5 +1,6 @@
 package com.example.vistbras.rest
 
+import com.example.vistbras.models.Denuncia
 import com.example.vistbras.models.Empresa
 import com.example.vistbras.models.ExtintorItem
 import com.example.vistbras.models.ExtintorItemResponse
@@ -11,6 +12,7 @@ import com.example.vistbras.models.LoginResponse
 import com.example.vistbras.models.User
 import com.example.vistbras.models.VistoriaAgendada
 import com.example.vistbras.models.VistoriaRealizada
+import okhttp3.MultipartBody
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -19,8 +21,10 @@ import retrofit2.http.Body
 import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.Header
+import retrofit2.http.Multipart
 import retrofit2.http.POST
 import retrofit2.http.PUT
+import retrofit2.http.Part
 import retrofit2.http.Path
 import retrofit2.http.Query
 
@@ -115,8 +119,29 @@ interface RetrofitService {
     @POST("api/v1/vistorias_realizadas/")
     fun createVistoria(
         @Header("Authorization") authorization: String,
-        @Body vistoriaRealizada: VistoriaRealizada
+        @Body vistoriaRealizada: VistoriaRealizada,
     ): Call<ResponseBody>
+
+    @GET("api/v1/vistorias_realizadas/")
+    fun getVistoriasRealizadas(
+        @Header("Authorization") authorization: String,
+    ): Call<List<VistoriaRealizada>>
+
+    @GET("api/v1/vistorias_realizadas/{id}/")
+    fun getVistoriaRealizada(
+        @Header("Authorization") authorization: String,
+        @Path("id") id: Int,
+    ): Call<VistoriaRealizada>
+
+    @POST("api/v1/denuncias/")
+    fun createDenuncia(
+        @Header("Authorization") authorization: String,
+        @Body denuncia: Denuncia
+    ): Call<ResponseBody>
+
+    @GET("api/v1/denuncias/")
+    fun getDenuncias(
+    ): Call<List<Denuncia>>
 
     companion object {
         private val retrofitService: RetrofitService by lazy {

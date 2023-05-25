@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.TypedValue
+import android.view.View
 import android.widget.RelativeLayout
 import android.widget.TableLayout
 import android.widget.TableRow
@@ -39,6 +40,8 @@ class HomeFiscalActivity : AppCompatActivity() {
     private lateinit var btnEmpresas: TextView
     private lateinit var btnRealizarVistoria: TextView
     private lateinit var btnAgendarVistoria: TextView
+    private lateinit var btnVistorias: View
+    private lateinit var btnLogout: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +57,8 @@ class HomeFiscalActivity : AppCompatActivity() {
         btnEmpresas = findViewById(R.id.btn_empresas)
         btnRealizarVistoria = findViewById(R.id.btn_realizar_vistoria)
         btnAgendarVistoria = findViewById(R.id.btn_agendar_vistoria)
+        btnVistorias = findViewById(R.id.btnVistorias)
+        btnLogout = findViewById(R.id.btn_logout)
 
         viewModel = ViewModelProvider(
             this, FiscalHomeViewModelFactory(FiscalRepository(retrofitService))
@@ -138,6 +143,14 @@ class HomeFiscalActivity : AppCompatActivity() {
 
         btnAgendarVistoria.setOnClickListener {
             startActivity(Intent(this, AgendarVistoriaAcitivity::class.java))
+        }
+        btnVistorias.setOnClickListener {
+            startActivity(Intent(this, VistoriasActivity::class.java))
+        }
+        btnLogout.setOnClickListener {
+            UserSession.cleanSession()
+            LoggedUserSession.clearUser()
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }

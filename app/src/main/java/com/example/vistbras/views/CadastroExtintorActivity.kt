@@ -149,6 +149,7 @@ class CadastroExtintorActivity : AppCompatActivity() {
                     Log.i("MaterialDatePicker", "data com LocalDate: $data")
                     Log.i("MaterialDatePicker", "data em milisegundos: $dataEmMilisegundos")
 
+
                     calendarView.text = data.toString()
                 }
         }

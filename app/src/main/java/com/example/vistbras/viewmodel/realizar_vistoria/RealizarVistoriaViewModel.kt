@@ -7,6 +7,7 @@ import com.example.vistbras.models.Extintores
 import com.example.vistbras.models.VistoriaRealizada
 import com.example.vistbras.repositories.ExtintoresRepository
 import com.example.vistbras.repositories.VistoriaRealizadaRepository
+import okhttp3.MultipartBody
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback

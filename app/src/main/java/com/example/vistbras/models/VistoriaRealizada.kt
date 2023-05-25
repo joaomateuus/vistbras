@@ -2,7 +2,7 @@ package com.example.vistbras.models
 
 data class VistoriaRealizada(
     val vistoria_agendada: Int,
-    val anexos_img: ByteArray? = null,
+    val anexos_img: String? = null,
     val bocal_vedado: Boolean,
     val comentarios: String,
     val data_realizada: String? = null,

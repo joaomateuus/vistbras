@@ -32,8 +32,14 @@ import com.example.vistbras.rest.RetrofitService
 import com.example.vistbras.store.LoggedUserSession
 import com.example.vistbras.viewmodel.realizar_vistoria.RealizarVistoriaViewModel
 import com.example.vistbras.viewmodel.realizar_vistoria.RealizarVistoriaViewModelFactory
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import java.io.ByteArrayOutputStream
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
 import java.time.LocalDate
+
 
 private const val REQUEST_IMAGE_CAPTURE = 1
 
@@ -73,7 +79,7 @@ class RealizarVistoriaActivity : AppCompatActivity() {
     private lateinit var btnSubmit: View
     private var extintorId: Int = 0
     private var vistoriaAgendadaId: Int = 0
-    private var anexoJPEG: ByteArray? = null
+    private var anexoJPEG: String? = null
 
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -198,13 +204,19 @@ class RealizarVistoriaActivity : AppCompatActivity() {
         }
     }
 
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             val imageBitmap = data?.extras?.get("data") as Bitmap
             imageAnexo.setImageBitmap(imageBitmap)
 
-            this.anexoJPEG = bitmapToJPEGByteArray(imageBitmap)
+            val byteArrayOutputStream = ByteArrayOutputStream()
+            imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
+            val byteArray = byteArrayOutputStream.toByteArray()
+            val imageBase64 = Base64.encodeToString(byteArray, Base64.DEFAULT)
+
+            this.anexoJPEG = imageBase64
         }
     }
 
@@ -254,7 +266,7 @@ class RealizarVistoriaActivity : AppCompatActivity() {
                 resultado = resultadoInput.text.toString(),
                 extintor = extintorId,
                 fiscal = fiscal!!.id,
-//                anexos_img = this.anexoJPEG
+                anexos_img = this.anexoJPEG
             )
 
             viewModel.createVistoria(token, data)

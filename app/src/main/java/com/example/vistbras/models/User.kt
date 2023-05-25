@@ -2,7 +2,7 @@ package com.example.vistbras.models
 
 data class User(
     val id: Int? = null,
-    val email: String,
+    val email: String? = null,
     val is_fiscal: Boolean,
     val is_staff: Boolean,
     val is_superuser: Boolean,

@@ -18,6 +18,27 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".views.CadastrarDenunciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.DenunciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.VistoriaRealizadaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.VistoriaAgendadaAcitivty"
+            android:exported="false" />
+        <activity
+            android:name=".views.VistoriasRealizadasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.VistoriasAgendadasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.VistoriasActivity"
+            android:exported="false" />
+        <activity
             android:name=".views.AgendarVistoriaAcitivity"
             android:exported="false" />
         <activity

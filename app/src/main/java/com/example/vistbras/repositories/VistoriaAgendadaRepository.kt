@@ -7,5 +7,7 @@ class VistoriaAgendadaRepository constructor(private val retrofitService: Retrof
     fun createVistoriaAgendada(token: String, vistoriaAgendada: VistoriaAgendada) =
         retrofitService.createVistoriaAgendada(token, vistoriaAgendada)
 
+    fun getVistoriasAgendadas(token: String) = retrofitService.getVistoriasAgendadas(token)
+
 
 }

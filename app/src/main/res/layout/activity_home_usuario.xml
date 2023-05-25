@@ -78,11 +78,11 @@
                         android:background="@drawable/rectangle_12_shape" />
 
                     <TextView
-                        android:id="@+id/nome_do_usuario"
+                        android:id="@+id/nome_user_text"
                         android:layout_width="198dp"
                         android:layout_height="39dp"
                         android:layout_marginLeft="128dp"
-                        android:layout_marginTop="121dp"
+                        android:layout_marginTop="126dp"
                         android:fontFamily="Inter"
                         android:text="Nome do usuario"
                         android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
@@ -99,23 +99,11 @@
                         android:src="@drawable/screenshot_237_1" />
 
                     <TextView
-                        android:id="@+id/logout"
-                        android:layout_width="75.5dp"
-                        android:layout_height="31.5dp"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="9dp"
-                        android:fontFamily="Inter"
-                        android:text="Logout"
-                        android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/email_do_usu_rio"
+                        android:id="@+id/email_usuario_text"
                         android:layout_width="193dp"
                         android:layout_height="32dp"
                         android:layout_marginLeft="131dp"
-                        android:layout_marginTop="146dp"
+                        android:layout_marginTop="156dp"
                         android:fontFamily="Inter"
                         android:text="Email do usuario"
                         android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
@@ -139,7 +127,7 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
                         android:contentDescription="screenshot_248_1"
-                        android:src="@drawable/screenshot_248_1" />
+                        android:src="@drawable/extintor_transp" />
 
                 </RelativeLayout>
 
@@ -148,7 +136,7 @@
                     android:id="@+id/dados_cadastrais_perfil_usuario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="633dp">
 
 
@@ -160,8 +148,8 @@
                         android:layout_marginTop="0dp">
 
                         <View
-                            android:id="@+id/rectangle_3_ek1"
-                            android:layout_width="169dp"
+                            android:id="@+id/btn_cadastrar_denun"
+                            android:layout_width="179dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
@@ -176,9 +164,9 @@
                             android:layout_marginTop="2dp"
                             android:fontFamily="Inter"
                             android:gravity="center"
-                            android:text="Dados cadastrais"
+                            android:text="Cadastrar Denuncia"
                             android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
-                            android:textSize="20sp"
+                            android:textSize="17sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
@@ -212,15 +200,15 @@
                     </RelativeLayout>
 
                     <TextView
-                        android:id="@+id/cancelar"
+                        android:id="@+id/btn_logout"
                         android:layout_width="155dp"
                         android:layout_height="47dp"
                         android:layout_gravity="center_horizontal|center"
-                        android:layout_marginLeft="11dp"
+                        android:layout_marginLeft="8dp"
                         android:layout_marginTop="0dp"
                         android:fontFamily="Inter"
                         android:gravity="center"
-                        android:text="Cancelar"
+                        android:text="Logout"
                         android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -244,7 +232,7 @@
                         android:layout_marginTop="0dp">
 
                         <View
-                            android:id="@+id/rectangle_2_ek2"
+                            android:id="@+id/btn_denuncias"
                             android:layout_width="168.16dp"
                             android:layout_height="50dp"
                             android:layout_marginStart="0dp"
@@ -259,12 +247,12 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center_horizontal|center"
                         android:layout_marginLeft="50dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginTop="5dp"
                         android:fontFamily="Inter"
                         android:gravity="center"
                         android:text="Denuncia"
                         android:textColor="@color/_bg__perfil_usu_rio___novo_ek2_color"
-                        android:textSize="20sp"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <ImageView
